@@ -5,8 +5,8 @@ function requestController(req, res) {
 
     console.log('Bienvenidos al curso')
 
-    res.write('Bienvenidos al curso')
-    res.end()
+    res.writeHead(200, { 'Content-Type': 'text/plain' })
+    res.end('Bienvenidos al curso')
 
 }
 
